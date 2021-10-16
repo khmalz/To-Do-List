@@ -18,19 +18,6 @@ inputTambah.addEventListener("keypress", function (e) {
          //   Menghapus teks dalam input
       }
       inputTambah.value = "";
-   } else if (e.code === "Space") {
-      if (inputTambah.value == null || inputTambah.value == "") {
-         alert("Isi dulu");
-      } else if (inputTambah.value.length < minChar) {
-         alert("Minimal isi dengan 3 huruf");
-      } else {
-         let list = "";
-         list += listB();
-         const ul = document.querySelector(".list-group");
-         ul.insertAdjacentHTML("afterbegin", list);
-         //   Menghapus teks dalam input
-      }
-      inputTambah.value = null;
    }
 });
 
