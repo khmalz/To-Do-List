@@ -14,4 +14,16 @@
 
 .list-group-item:hover .hapus {
    display: inline-block;
+   animation: muncul 0.65s ease;
+   -webkit-animation: muncul 0.65s ease;
+}
+
+@keyframes muncul {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
 }
